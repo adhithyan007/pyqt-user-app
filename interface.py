@@ -20,7 +20,9 @@ grid = QGridLayout()
 image =QPixmap("logo.png")
 logo = QLabel()
 logo.setPixmap(image)
+logo.setAlignment(QtCore.Qt.AlignRight)
 
+logo.setStyleSheet("margin-top:100px;")
 grid.addWidget(logo,0,0)
 
 window.setLayout(grid)
